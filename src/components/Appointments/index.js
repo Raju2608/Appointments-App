@@ -45,7 +45,7 @@ class Appointments extends Component {
     event.preventDefault()
     const {titleInput, dateInput} = this.state
     const formattedDate = dateInput
-      ? format(new Date(dateInput), 'dd MM yyyy, EEEE')
+      ? format(new Date(dateInput), 'dd MMMM yyyy, EEEE')
       : ''
     const newAppointment = {
       id: v4(),
